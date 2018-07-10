@@ -1,6 +1,5 @@
-package videoteca;
+package control;
 
-import entidades.Pelicula;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -27,6 +26,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.ContextMenuEvent;
+import pojo.Pelicula;
 import javax.swing.JOptionPane;
 import repo.PeliculaRepo;
 import reportes.Reporte;
@@ -377,13 +377,13 @@ public class PeliculaController implements Initializable {
     }
 
     private void colocarImagenBotones() {
-	URL linkNuevo = getClass().getResource("/img/nuevo.png");
-	URL linkGuardar = getClass().getResource("/img/guardar.png");
-	URL linkEliminar = getClass().getResource("/img/eliminar.png");
-	URL linkCancelar = getClass().getResource("/img/cancelar.png");
-	URL linkBuscar = getClass().getResource("/img/buscar.png");
-	URL linkRefrescar = getClass().getResource("/img/refrescar.png");
-	URL linkReporte = getClass().getResource("/img/reporte.png");
+	URL linkNuevo = getClass().getResource("/images/nuevo.png");
+	URL linkGuardar = getClass().getResource("/images/guardar.png");
+	URL linkEliminar = getClass().getResource("/images/eliminar.png");
+	URL linkCancelar = getClass().getResource("/images/cancelar.png");
+	URL linkBuscar = getClass().getResource("/images/buscar.png");
+	URL linkRefrescar = getClass().getResource("/images/refrescar.png");
+	URL linkReporte = getClass().getResource("/images/reporte.png");
 
 	Image imagenNuevo = new Image(linkNuevo.toString(), 24, 24, false, true);
 	Image imagenGuardar = new Image(linkGuardar.toString(), 24, 24, false, true);

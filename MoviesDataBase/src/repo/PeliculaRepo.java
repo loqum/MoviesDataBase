@@ -1,12 +1,13 @@
 package repo;
 
-import db.JdbcHelper;
-import entidades.Pelicula;
 import java.sql.ResultSet;
+
+import connection.JdbcHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import pojo.Pelicula;
 
 public class PeliculaRepo {
 

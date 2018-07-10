@@ -1,6 +1,5 @@
 package reportes;
 
-import db.ConexionMySql;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -9,6 +8,8 @@ import net.sf.jasperreports.swing.JRViewer;
 import java.io.InputStream;
 import java.sql.Connection;
 import javax.swing.JFrame;
+
+import connection.ConexionMySql;
 
 public class Reporte {
     private String reporte;

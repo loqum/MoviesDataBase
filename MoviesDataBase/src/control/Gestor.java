@@ -1,4 +1,4 @@
-package videoteca;
+package control;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -20,7 +20,7 @@ public class Gestor extends Application {
 
          stage.setResizable(true);
          stage.setTitle("MoviesDataBase");
-         stage.getIcons().add(new Image("/img/movie.png"));
+         stage.getIcons().add(new Image("/images/movie.png"));
          
          //al cerrar la ventana de Libros
          stage.setOnCloseRequest(new EventHandler<WindowEvent>(){

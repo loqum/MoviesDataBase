@@ -1,4 +1,4 @@
-package entidades;
+package pojo;
 
 public class Pelicula {
     private long id;
