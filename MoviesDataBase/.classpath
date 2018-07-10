@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-chart-customizers-6.6.0.jar"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-chart-themes-6.6.0.jar"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-fonts-6.1.1.jar"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-functions-6.6.0.jar"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-javaflow-6.6.0.jar"/>
+	<classpathentry kind="lib" path="jasperlib/jasperreports-metadata-6.6.0.jar"/>
+	<classpathentry kind="lib" path="bbdd/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="jasperlib/spring-beans-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="jasperlib/spring-core-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="jasperlib/spring-expression-3.2.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="jasperlib/joda-time-2.0.jar"/>
+	<classpathentry kind="lib" path="jasperlib/net.tascalate.javaflow.api-2.2.1.jar"/>
+	<classpathentry kind="lib" path="jasperlib/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="jasperlib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="jasperlib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="jasperlib/commons-javaflow-20160505.jar"/>
+	<classpathentry kind="lib" path="jasperlib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
