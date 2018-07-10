@@ -20,5 +20,9 @@
 	<classpathentry kind="lib" path="jasperlib/commons-digester-2.1.jar"/>
 	<classpathentry kind="lib" path="jasperlib/commons-javaflow-20160505.jar"/>
 	<classpathentry kind="lib" path="jasperlib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="jasperlib/groovy-all-1.7.5.jar"/>
+	<classpathentry kind="lib" path="jasperlib/iText-2.1.7.jar"/>
+	<classpathentry kind="lib" path="jasperlib/png-encoder-1.5.jar"/>
+	<classpathentry kind="lib" path="jasperlib/poi-3.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -12,7 +12,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ContextMenu;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SingleSelectionModel;
@@ -37,6 +36,10 @@ public class PeliculaController implements Initializable {
     @FXML
     private Tab tabEntrada;
     @FXML
+    private Label labResultados;
+    @FXML
+    private TabPane tabPanePelicula;
+    @FXML
     private TextField txtId;
     @FXML
     private TextField txtTitulo;
@@ -50,8 +53,6 @@ public class PeliculaController implements Initializable {
     private ChoiceBox<String> choiceGenero;
     @FXML
     private TextField txtYear;
-    @FXML
-    private DatePicker dateFecha;
     @FXML
     private Button btnNuevo;
     @FXML
@@ -87,11 +88,13 @@ public class PeliculaController implements Initializable {
     @FXML
     private TableColumn<Pelicula, String> colCiclo;
     @FXML
-    private Button btnReporte;
+    private MenuItem btnReporte;
     @FXML
-    private Label labResultados;
+    private MenuItem handleExit;
     @FXML
-    private TabPane tabPanePelicula;
+    private MenuItem handleAbout;
+
+
 
     /**
      * Initializes the controller class.
@@ -308,7 +311,7 @@ public class PeliculaController implements Initializable {
 	    break;
 	case "Ciclo":
 	    String cicloBusqueda = txtBuscar.getText();
-	    peliculas = peliculaRepo.buscarPorGenero(cicloBusqueda);
+	    peliculas = peliculaRepo.buscarPorCiclo(cicloBusqueda);
 	    break;
 	default:
 	    Alert alert = new Alert(AlertType.WARNING);
@@ -353,6 +356,7 @@ public class PeliculaController implements Initializable {
 		choiceGenero.setValue(pelicula.getGenero());
 		txtSoporte.setText(pelicula.getSoporte());
 		txtYear.setText(String.valueOf(pelicula.getYear()));
+		txtCiclo.setText(pelicula.getCiclo());
 
 		habilitarCampos();
 		btnNuevo.setDisable(true);
@@ -402,5 +406,19 @@ public class PeliculaController implements Initializable {
 	btnReporte.setGraphic((new ImageView(imagenReporte)));
 
     }
+    
+    @FXML
+    private void handleExit() {
+        System.exit(0);
+    }
+    
+    @FXML
+    private void handleAbout() {
+	Alert alert = new Alert(AlertType.INFORMATION);
+	    alert.setTitle("MoviesDataBase");
+	    alert.setHeaderText("Acerca de");
+	    alert.setContentText("Autor: Rubén Fernández https://github.com/loqum");
 
+	    alert.showAndWait();
+    }
 }
