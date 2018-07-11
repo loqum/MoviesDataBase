@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MoviesDataBase.jnlp">
+  <information>
+    <title>MoviesDataBase</title>
+    <vendor>Ruben Fernandez</vendor>
+    <description>MoviesDataBase</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MoviesDataBase.jar" size="114020" download="eager" />
+    <jar href="libs\commons-beanutils-1.8.2.jar" size="231891" download="eager" />
+    <jar href="libs\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="libs\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="libs\commons-javaflow-20160505.jar" size="54584" download="eager" />
+    <jar href="libs\commons-logging-1.1.1.jar" size="60686" download="eager" />
+    <jar href="libs\groovy-all-1.7.5.jar" size="5482221" download="eager" />
+    <jar href="libs\iText-2.1.7.jar" size="1130070" download="eager" />
+    <jar href="libs\jasperreports-chart-customizers-6.6.0.jar" size="44075" download="eager" />
+    <jar href="libs\jasperreports-chart-themes-6.6.0.jar" size="173470" download="eager" />
+    <jar href="libs\jasperreports-fonts-6.1.1.jar" size="2480133" download="eager" />
+    <jar href="libs\jasperreports-functions-6.6.0.jar" size="32192" download="eager" />
+    <jar href="libs\jasperreports-javaflow-6.6.0.jar" size="5543559" download="eager" />
+    <jar href="libs\jasperreports-metadata-6.6.0.jar" size="9215" download="eager" />
+    <jar href="libs\joda-time-2.0.jar" size="569231" download="eager" />
+    <jar href="libs\mysql-connector-java-8.0.11.jar" size="2036609" download="eager" />
+    <jar href="libs\net.tascalate.javaflow.api-2.2.1.jar" size="22494" download="eager" />
+    <jar href="libs\png-encoder-1.5.jar" size="18117" download="eager" />
+    <jar href="libs\poi-3.7.jar" size="1675036" download="eager" />
+    <jar href="libs\spring-beans-3.2.18.RELEASE.jar" size="614434" download="eager" />
+    <jar href="libs\spring-core-3.2.18.RELEASE.jar" size="885560" download="eager" />
+    <jar href="libs\spring-expression-3.2.18.RELEASE.jar" size="196256" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="control.Gestor"  name="MoviesDataBase" />
+  <update check="background"/>
+</jnlp>
