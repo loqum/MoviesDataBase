@@ -7,6 +7,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import pojo.Pelicula;
 
 public class PeliculaRepo {
@@ -50,7 +53,7 @@ public class PeliculaRepo {
 	}
 	if (pelicula.getTitulo().trim().length() > 100) {
 	    esValido = false;
-	    sb.append("*Título debe ser menor a 100 caracteres\n");
+	    sb.append("*El título debe ser menor a 100 carácteres\n");
 	}
 	if (pelicula.getDirector().trim().equals("")) {
 	    esValido = false;
@@ -58,7 +61,7 @@ public class PeliculaRepo {
 	}
 	if (pelicula.getDirector().trim().length() > 100) {
 	    esValido = false;
-	    sb.append("*Director debe ser menor a 100 caracteres\n");
+	    sb.append("*El campo 'Director' debe ser menor a 100 caracteres\n");
 	}
 	if (pelicula.getGenero().trim().equals("")) {
 	    esValido = false;
@@ -66,7 +69,7 @@ public class PeliculaRepo {
 	}
 	if (pelicula.getYear() <= 0) {
 	    esValido = false;
-	    sb.append("*El año debe ser mayor a cero\n");
+	    sb.append("*El año debe ser mayor que cero\n");
 	}
 	if (pelicula.getSoporte().trim().equals("")) {
 	    esValido = false;
@@ -75,10 +78,14 @@ public class PeliculaRepo {
 
 	if (!esValido) {
 	    Alert alert = new Alert(AlertType.ERROR);
-	    alert.setTitle("Error de validación");
-	    alert.setHeaderText("Se han encontrado los siguientes errores: ");
+	    alert.setTitle("MoviesDataBase");
+	    alert.setHeaderText("Se han producido los siguientes errores ");
 	    alert.setContentText(sb.toString());
-
+	    
+	    Image image = new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Emojione_1F62D.svg/64px-Emojione_1F62D.svg.png");
+	    ImageView imageView = new ImageView(image);
+	    alert.setGraphic(imageView);
+	    
 	    alert.showAndWait();
 
 	}

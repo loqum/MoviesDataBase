@@ -112,7 +112,7 @@ public class PeliculaController implements Initializable {
 	btnEliminar.setDisable(true);
 	btnCancelar.setDisable(true);
 
-	choiceGenero.getItems().addAll("Acción", "Ciencia Ficción", "Comedia", "Drama", "Romántica", "Suspense", "Terror");
+	choiceGenero.getItems().addAll("Acción", "Ciencia Ficción", "Comedia", "Drama", "Histórica", "Romántica", "Suspense", "Terror");
 	choiceGenero.setValue("");
 	choiceBuscar.getItems().addAll("Id", "Título", "Director", "Género", "Ciclo");
 	choiceBuscar.setValue("Id");
@@ -191,9 +191,9 @@ public class PeliculaController implements Initializable {
 	} catch (Exception ex) {
 
 	    Alert alert = new Alert(AlertType.WARNING);
-	    alert.setTitle("Atención");
+	    alert.setTitle("MoviesDataBase");
 	    alert.setHeaderText("Error de validación:");
-	    alert.setContentText("El campo año debe ser numérico");
+	    alert.setContentText("El campo año debe ser numérico.");
 
 	    alert.showAndWait();
 
@@ -217,9 +217,9 @@ public class PeliculaController implements Initializable {
 	    btnCancelar.setDisable(true);
 
 	    Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Aviso");
-	    alert.setHeaderText("La operación ha sido un éxito:");
-	    alert.setContentText("Los cambios han sido guardados");
+	    alert.setTitle("MoviesDataBase");
+	    alert.setHeaderText("¡La operación ha sido un éxito!");
+	    alert.setContentText("Película registrada correctamente.");
 
 	    alert.showAndWait();
 
@@ -237,9 +237,9 @@ public class PeliculaController implements Initializable {
 	    peliculaRepo.eliminar(id);
 
 	    Alert alert = new Alert(AlertType.INFORMATION);
-	    alert.setTitle("Éxito");
-	    alert.setHeaderText("La operación ha sido un éxito:");
-	    alert.setContentText("Registro eliminado");
+	    alert.setTitle("MoviesDataBase");
+	    alert.setHeaderText("¡La operación ha sido un éxito!");
+	    alert.setContentText("Película eliminada correctamente.");
 
 	    alert.showAndWait();
 
@@ -274,9 +274,9 @@ public class PeliculaController implements Initializable {
 		id = Integer.parseInt(txtBuscar.getText());
 	    } catch (Exception ex) {
 		Alert alert = new Alert(AlertType.WARNING);
-		alert.setTitle("Error de búsqueda");
-		alert.setHeaderText("Ha habido un error:");
-		alert.setContentText("Debe ingresar un id válido");
+		alert.setTitle("MoviesDataBase");
+		alert.setHeaderText("Se ha producido un error en la búsqueda:");
+		alert.setContentText("Debes ingresar un id válido.");
 
 		alert.showAndWait();
 		return;
@@ -315,9 +315,9 @@ public class PeliculaController implements Initializable {
 	    break;
 	default:
 	    Alert alert = new Alert(AlertType.WARNING);
-	    alert.setTitle("Error de búsqueda");
-	    alert.setHeaderText("Ha habido un error:");
-	    alert.setContentText("Modo de búsqueda incorrecto");
+	    alert.setTitle("MoviesDataBase");
+	    alert.setHeaderText("Se ha producido un error en la búsqueda:");
+	    alert.setContentText("Modo de búsqueda incorrecto.");
 
 	    alert.showAndWait();
 	    return;
@@ -342,9 +342,9 @@ public class PeliculaController implements Initializable {
 		Pelicula pelicula = tablaPelicula.getSelectionModel().getSelectedItem();
 		if (pelicula == null) {
 		    Alert alert = new Alert(AlertType.WARNING);
-		    alert.setTitle("Error!");
-		    alert.setHeaderText("Parece que ha habido una confusión: ");
-		    alert.setContentText("Si deseas editar una película, primero debes seleccionar una");
+		    alert.setTitle("MoviesDataBase");
+		    alert.setHeaderText("Se ha producido un error: ");
+		    alert.setContentText("Debes seleccionar una película.");
 
 		    alert.showAndWait();
 
@@ -417,7 +417,7 @@ public class PeliculaController implements Initializable {
 	Alert alert = new Alert(AlertType.INFORMATION);
 	    alert.setTitle("MoviesDataBase");
 	    alert.setHeaderText("Acerca de");
-	    alert.setContentText("Autor: Rubén Fernández https://github.com/loqum");
+	    alert.setContentText("Autor: Rubén Fernández \nhttps://github.com/loqum");
 
 	    alert.showAndWait();
     }
