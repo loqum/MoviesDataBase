@@ -31,8 +31,6 @@ public class Gestor extends Application {
 		System.exit(0);
 	    }
 	});
-	
-	
 
 	stage.setScene(scene);
 	stage.show();
@@ -47,3 +45,5 @@ public class Gestor extends Application {
     }
 
 }
+
+

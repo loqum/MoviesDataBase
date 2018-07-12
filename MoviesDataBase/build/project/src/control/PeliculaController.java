@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Label;
@@ -50,6 +51,8 @@ public class PeliculaController implements Initializable {
     @FXML
     private TextField txtCiclo;
     @FXML
+    private CheckBox cbVista;
+    @FXML
     private ChoiceBox<String> choiceGenero;
     @FXML
     private TextField txtYear;
@@ -88,6 +91,8 @@ public class PeliculaController implements Initializable {
     @FXML
     private TableColumn<Pelicula, String> colCiclo;
     @FXML
+    private TableColumn<Pelicula, String> colVista;
+    @FXML
     private MenuItem btnReporte;
     @FXML
     private MenuItem handleExit;
@@ -125,6 +130,7 @@ public class PeliculaController implements Initializable {
 	colYear.setCellValueFactory(new PropertyValueFactory<>("year"));
 	colSoporte.setCellValueFactory(new PropertyValueFactory<>("soporte"));
 	colCiclo.setCellValueFactory(new PropertyValueFactory<>("ciclo"));
+	colVista.setCellValueFactory(new PropertyValueFactory<>("vista"));
 	tablaPelicula.setItems(dataPelicula);
     }
 
@@ -141,7 +147,7 @@ public class PeliculaController implements Initializable {
 	txtId.setText("");
 	txtTitulo.setText("");
 	txtDirector.setText("");
-	txtYear.setText("0");
+	txtYear.setText("");
 	txtSoporte.setText("");
 	txtCiclo.setText("");
     }
@@ -154,6 +160,7 @@ public class PeliculaController implements Initializable {
 	txtYear.setDisable(true);
 	txtSoporte.setDisable(true);
 	txtCiclo.setDisable(true);
+	cbVista.setDisable(true);
     }
 
     private void habilitarCampos() {
@@ -164,6 +171,7 @@ public class PeliculaController implements Initializable {
 	txtYear.setDisable(false);
 	txtSoporte.setDisable(false);
 	txtCiclo.setDisable(false);
+	cbVista.setDisable(false);
     }
 
     @FXML
@@ -185,6 +193,7 @@ public class PeliculaController implements Initializable {
 	String soporte = txtSoporte.getText();
 	int year;
 	String ciclo = txtCiclo.getText();
+	String vista = cbVista_click(event);
 	try {
 	    year = Integer.parseInt(txtYear.getText());
 	} catch (Exception ex) {
@@ -201,10 +210,10 @@ public class PeliculaController implements Initializable {
 
 	Pelicula pelicula;
 	if (txtId.getText().trim().equals(""))
-	    pelicula = new Pelicula(titulo, director, genero, year, soporte, ciclo);
+	    pelicula = new Pelicula(titulo, director, genero, year, soporte, ciclo, vista);
 	else {
 	    id = Integer.parseInt(txtId.getText());
-	    pelicula = new Pelicula(id, titulo, director, genero, year, soporte, ciclo);
+	    pelicula = new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista);
 	}
 	PeliculaRepo peliculaRepo = new PeliculaRepo();
 	if (peliculaRepo.guardar(pelicula)) {
@@ -329,6 +338,7 @@ public class PeliculaController implements Initializable {
     @FXML
     private void btnRefrescar_click(ActionEvent event) {
 	rellenarTablaPelicula();
+	txtBuscar.setText("");
     }
 
     @FXML
@@ -356,7 +366,8 @@ public class PeliculaController implements Initializable {
 		txtSoporte.setText(pelicula.getSoporte());
 		txtYear.setText(String.valueOf(pelicula.getYear()));
 		txtCiclo.setText(pelicula.getCiclo());
-
+		pelicula.setVista(cbVista_click(event));
+		
 		habilitarCampos();
 		btnNuevo.setDisable(true);
 		btnGuardar.setDisable(false);
@@ -420,4 +431,14 @@ public class PeliculaController implements Initializable {
 
 	alert.showAndWait();
     }
+    
+    @FXML
+    private String cbVista_click (ActionEvent event) {
+	if (cbVista.isSelected() == true) {
+	    return "Sí";
+	} else {
+	    return "";
+	}
+    }
+
 }

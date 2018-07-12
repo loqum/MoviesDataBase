@@ -8,8 +8,9 @@ public class Pelicula {
     private int year;
     private String soporte;
     private String ciclo;
+    private String vista;
 
-    public Pelicula(int id, String titulo, String director, String genero, int year, String soporte, String ciclo) {
+    public Pelicula(int id, String titulo, String director, String genero, int year, String soporte, String ciclo, String vista) {
 	this.id = id;
 	this.titulo = titulo;
 	this.director = director;
@@ -17,15 +18,17 @@ public class Pelicula {
 	this.year = year;
 	this.soporte = soporte;
 	this.ciclo = ciclo;
+	this.vista = vista;
     }
 
-    public Pelicula(String titulo, String director, String genero, int year, String soporte, String ciclo) {
+    public Pelicula(String titulo, String director, String genero, int year, String soporte, String ciclo, String vista) {
 	this.titulo = titulo;
 	this.director = director;
 	this.genero = genero;
 	this.year = year;
 	this.soporte = soporte;
 	this.ciclo = ciclo;
+	this.vista = vista;
     }
 
     public long getId() {
@@ -84,10 +87,18 @@ public class Pelicula {
 	this.ciclo = ciclo;
     }
 
+    public String getVista() {
+	return vista;
+    }
+
+    public void setVista(String vista) {
+	this.vista = vista;
+    }
+
     @Override
     public String toString() {
 	return "Pelicula [id=" + id + ", titulo=" + titulo + ", director=" + director + ", genero=" + genero + ", year="
-		+ year + ", soporte=" + soporte + ", ciclo=" + ciclo + "]";
-    }
+		+ year + ", soporte=" + soporte + ", ciclo=" + ciclo + ", vista=" + vista + "]";
+    }    
 
 }

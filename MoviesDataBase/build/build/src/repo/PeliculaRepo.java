@@ -13,9 +13,7 @@ import pojo.Pelicula;
 public class PeliculaRepo {
 
     private boolean insertar(Pelicula pelicula) {
-	String query = "INSERT INTO peliculas (titulo, director, genero, year, soporte, ciclo) " + "VALUES ('"
-		+ pelicula.getTitulo() + "','" + pelicula.getDirector() + "','" + pelicula.getGenero() + "','"
-		+ pelicula.getYear() + "','" + pelicula.getSoporte() + "','" + pelicula.getCiclo() + "')";
+	String query = "INSERT INTO peliculas (titulo, director, genero, year, soporte, ciclo, vista) " + "VALUES ('" + pelicula.getTitulo() + "','" + pelicula.getDirector() + "','" + pelicula.getGenero() + "','" + pelicula.getYear() + "','" + pelicula.getSoporte() + "','" + pelicula.getCiclo() + "','" + pelicula.getVista() + "')";
 	JdbcHelper jdbc = new JdbcHelper();
 	boolean exito = jdbc.ejecutarQuery(query);
 	return exito;
@@ -24,8 +22,7 @@ public class PeliculaRepo {
     private boolean modificar(Pelicula pelicula) {
 	String query = "UPDATE peliculas SET " + "titulo = '" + pelicula.getTitulo() + "'," + "director = '"
 		+ pelicula.getDirector() + "'," + "genero = '" + pelicula.getGenero() + "'," + "year = '"
-		+ pelicula.getYear() + "'," + "soporte = '" + pelicula.getSoporte() + "'," + "ciclo = '"
-		+ pelicula.getCiclo() + "' WHERE idpeliculas = " + pelicula.getId();
+		+ pelicula.getYear() + "'," + "soporte = '" + pelicula.getSoporte() + "'," + "ciclo = '" + pelicula.getCiclo() + "'," + "vista = '" + pelicula.getVista() + "' WHERE idpeliculas = " + pelicula.getId();
 	JdbcHelper jdbc = new JdbcHelper();
 	boolean exito = jdbc.ejecutarQuery(query);
 	return exito;
@@ -119,7 +116,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		pelicula = new Pelicula(id, titulo, director, genero, year, soporte, ciclo);
+		String vista = rs.getString("vista");
+		pelicula = new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista);
 	    }
 	} catch (Exception ex) {
 	    Alert alert = new Alert(AlertType.ERROR);
@@ -149,7 +147,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo));
+		String vista = rs.getString("vista");
+		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista));
 	    }
 	} catch (Exception ex) {
 	    Alert alert = new Alert(AlertType.ERROR);
@@ -178,7 +177,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo));
+		String vista = rs.getString("vista");
+		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista));
 	    }
 	} catch (Exception ex) {
 
@@ -209,7 +209,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo));
+		String vista = rs.getString("vista");
+		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista));
 	    }
 	} catch (Exception ex) {
 	    Alert alert = new Alert(AlertType.ERROR);
@@ -239,7 +240,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo));
+		String vista = rs.getString("vista");
+		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista));
 	    }
 	} catch (Exception ex) {
 	    Alert alert = new Alert(AlertType.ERROR);
@@ -268,7 +270,8 @@ public class PeliculaRepo {
 		int year = rs.getInt("year");
 		String soporte = rs.getString("soporte");
 		String ciclo = rs.getString("ciclo");
-		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo));
+		String vista = rs.getString("vista");
+		peliculas.add(new Pelicula(id, titulo, director, genero, year, soporte, ciclo, vista));
 	    }
 	} catch (Exception ex) {
 	    Alert alert = new Alert(AlertType.ERROR);
