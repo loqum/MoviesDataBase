@@ -110,8 +110,8 @@ public class PeliculaController implements Initializable {
 	btnEliminar.setDisable(true);
 	btnCancelar.setDisable(true);
 
-	choiceGenero.getItems().addAll("Acción", "Ciencia Ficción", "Comedia", "Drama", "Histórica", "Romántica",
-		"Suspense", "Terror");
+	choiceGenero.getItems().addAll("Acción", "Anime", "Ciencia Ficción", "Comedia", "Drama", "Histórica", "Romántica",
+		"Suspense", "Terror", "Thriller", "Western");
 	choiceGenero.setValue("");
 	choiceBuscar.getItems().addAll("Id", "Título", "Director", "Género", "Ciclo");
 	choiceBuscar.setValue("Id");
