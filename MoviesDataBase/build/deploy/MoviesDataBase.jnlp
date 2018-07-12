@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="MoviesDataBase.jar" size="114020" download="eager" />
+    <jar href="MoviesDataBase.jar" size="114001" download="eager" />
     <jar href="libs\commons-beanutils-1.8.2.jar" size="231891" download="eager" />
     <jar href="libs\commons-collections-3.2.1.jar" size="575389" download="eager" />
     <jar href="libs\commons-digester-2.1.jar" size="196768" download="eager" />
@@ -16,6 +16,7 @@
     <jar href="libs\commons-logging-1.1.1.jar" size="60686" download="eager" />
     <jar href="libs\groovy-all-1.7.5.jar" size="5482221" download="eager" />
     <jar href="libs\iText-2.1.7.jar" size="1130070" download="eager" />
+    <jar href="libs\jasper-compiler-jdt-5.5.23.jar" size="1213732" download="eager" />
     <jar href="libs\jasperreports-chart-customizers-6.6.0.jar" size="44075" download="eager" />
     <jar href="libs\jasperreports-chart-themes-6.6.0.jar" size="173470" download="eager" />
     <jar href="libs\jasperreports-fonts-6.1.1.jar" size="2480133" download="eager" />
@@ -25,6 +26,7 @@
     <jar href="libs\joda-time-2.0.jar" size="569231" download="eager" />
     <jar href="libs\mysql-connector-java-8.0.11.jar" size="2036609" download="eager" />
     <jar href="libs\net.tascalate.javaflow.api-2.2.1.jar" size="22494" download="eager" />
+    <jar href="libs\org.eclipse.jdt.core-3.7.1.jar" size="1748770" download="eager" />
     <jar href="libs\png-encoder-1.5.jar" size="18117" download="eager" />
     <jar href="libs\poi-3.7.jar" size="1675036" download="eager" />
     <jar href="libs\spring-beans-3.2.18.RELEASE.jar" size="614434" download="eager" />

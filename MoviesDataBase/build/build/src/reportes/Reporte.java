@@ -10,6 +10,8 @@ import java.sql.Connection;
 import javax.swing.JFrame;
 
 import connection.ConexionMySql;
+//import javafx.scene.control.Alert;
+//import javafx.scene.control.Alert.AlertType;
 
 public class Reporte {
     private String reporte;
@@ -22,18 +24,28 @@ public class Reporte {
 	ConexionMySql conexionMySql = new ConexionMySql();
 	Connection conn = conexionMySql.conectar();
 	try {
-	    InputStream dir = getClass().getResourceAsStream("/reportes/" + this.reporte + ".jrxml");
-	    JasperReport jr = JasperCompileManager.compileReport(dir);
-	    JasperPrint jp = JasperFillManager.fillReport(jr, null, conn);
+	    InputStream reportFile = getClass().getResourceAsStream("/reportes/"+
+                    this.reporte+".jrxml");
+	    JasperReport jr = (JasperReport) JasperCompileManager.compileReport(reportFile);
+	    JasperPrint print = JasperFillManager.fillReport(jr, null, conn);	 
 
-	    JRViewer test = new JRViewer(jp);
-	    JFrame frame = new JFrame("Report");
-	    frame.getContentPane().add(test);
+	    JRViewer viewer = new JRViewer(print);
+	    JFrame frame = new JFrame("reporte");
+	    frame.getContentPane().add(viewer);
 	    frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 	    frame.pack();
 	    frame.setVisible(true);
+	    
 	} catch (Exception ex) {
-	    System.out.println("Error al generar el reporte " + this.reporte + ": " + ex);
+	    System.out.println(this.reporte + ": " + ex);
+//	    Alert alert = new Alert(AlertType.WARNING);
+//	    alert.setTitle("MoviesDataBase");
+//	    alert.setHeaderText("Error al generar el reporte:");
+//	    alert.setContentText(this.reporte + ": " + ex);
+//
+//	    alert.showAndWait();
+	    
+	    //PROBAR ERROR REPORTE
 	}
     }
 

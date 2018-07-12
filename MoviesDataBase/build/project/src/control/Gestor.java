@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 public class Gestor extends Application {
-
+    
     @Override
     public void start(Stage stage) throws Exception {
 
@@ -22,7 +22,7 @@ public class Gestor extends Application {
 	stage.setTitle("MoviesDataBase");
 	stage.getIcons().add(new Image("/images/movie.png"));
 
-	// al cerrar la ventana de Libros
+	// al cerrar la ventana
 	stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 
 	    @Override
@@ -31,6 +31,8 @@ public class Gestor extends Application {
 		System.exit(0);
 	    }
 	});
+	
+	
 
 	stage.setScene(scene);
 	stage.show();

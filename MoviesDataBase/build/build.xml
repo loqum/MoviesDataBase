@@ -21,108 +21,118 @@
 		<mkdir dir="externalLibs" />
 	
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="commons-beanutils-1.8.2.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\bbdd">
-				<filename name="mysql-connector-java-8.0.11.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="spring-expression-3.2.18.RELEASE.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="jasperreports-fonts-6.1.1.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="net.tascalate.javaflow.api-2.2.1.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="joda-time-2.0.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="iText-2.1.7.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="jasperreports-javaflow-6.6.0.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="poi-3.7.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="jasperreports-metadata-6.6.0.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="jasperreports-functions-6.6.0.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="png-encoder-1.5.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="jasperreports-chart-themes-6.6.0.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
 				<filename name="spring-core-3.2.18.RELEASE.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="commons-collections-3.2.1.jar"/>
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="net.tascalate.javaflow.api-2.2.1.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="mysql-connector-java-8.0.11.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
 				<filename name="jasperreports-chart-customizers-6.6.0.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="groovy-all-1.7.5.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
 				<filename name="commons-logging-1.1.1.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
-				<filename name="spring-beans-3.2.18.RELEASE.jar"/>
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasperreports-fonts-6.1.1.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
 				<filename name="commons-javaflow-20160505.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\jasperlib">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="org.eclipse.jdt.core-3.7.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="commons-beanutils-1.8.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="poi-3.7.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasperreports-chart-themes-6.6.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasperreports-functions-6.6.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="joda-time-2.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="commons-collections-3.2.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasperreports-javaflow-6.6.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="groovy-all-1.7.5.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="spring-beans-3.2.18.RELEASE.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
 				<filename name="commons-digester-2.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="png-encoder-1.5.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasper-compiler-jdt-5.5.23.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="iText-2.1.7.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="jasperreports-metadata-6.6.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\rfernandezm\git\MoviesDataBase\MoviesDataBase\lib">
+				<filename name="spring-expression-3.2.18.RELEASE.jar"/>
 			</fileset>
 		</copy>
 	
@@ -153,7 +163,9 @@
 				<include name="png-encoder-1.5.jar"/>
 				<include name="commons-collections-3.2.1.jar"/>
 				<include name="jasperreports-functions-6.6.0.jar"/>
+				<include name="org.eclipse.jdt.core-3.7.1.jar"/>
 				<include name="jasperreports-metadata-6.6.0.jar"/>
+				<include name="jasper-compiler-jdt-5.5.23.jar"/>
 				<include name="jasperreports-chart-customizers-6.6.0.jar"/>
 				<include name="iText-2.1.7.jar"/>
 				<include name="groovy-all-1.7.5.jar"/>
@@ -211,12 +223,13 @@
 		<fx:resources id="appRes">
 			<fx:fileset dir="dist" includes="MoviesDataBase.jar"/>
 			<fx:fileset dir="dist" includes="libs/*"/>
-			<fx:fileset dir="dist" includes="images/**"/>
+		    <fx:fileset dir="dist" includes="resources/**"/>
 		</fx:resources>
 	
 		<fx:application id="fxApplication"
 			name="MoviesDataBase"
 			mainClass="control.Gestor"
+			toolkit="fx"
 			version="1.0"
 		/>
 	
